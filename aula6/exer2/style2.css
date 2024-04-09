@@ -1,0 +1,98 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+header
+{
+	background-color: #534B62;
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 10px 5px 10px;
+	align-items: center;
+}
+
+#figuraLogo
+{
+	height: 50px;
+	margin: 0px;
+}
+
+#logo
+{
+	width: 50px;
+}
+
+ul
+{
+	margin: 0px;
+	display: flex;
+	gap: 15px;
+	list-style: none;
+}
+
+a
+{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+a:hover
+{
+	color: gray;
+}
+
+li
+{
+}
+	
+#para1
+{
+	clear: left;
+	margin-top: 10px;
+}
+.sacola
+{
+	width: 320px;
+	height: 30px;
+	background-color: #1B1725;
+	border-radius: 10px;
+	color: #FFFFFF;
+	margin: 0px;
+	font-size: medium;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#figuraImgFam
+{
+	float: left
+}
+
+#imgFam
+{
+	height: 300px;
+}
+
+#rodape
+{
+	clear: left;
+	background-color: #534B62;
+	margin: 0px;
+	height: 50px;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#Text
+{
+	color: #FFFFFF;
+	margin: 0px;
+	
+}
+
