@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+	<head>	
+		<title></title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="global.css">
+		<script type="text/javascript" src="script.js">
+		</script>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="izumi">
+	</head>
+
+	<body onload="myFunc();">
+		
+		<section id='idlugar'>teste</section>
+		<img id="idPosition" onclick="this.style.rotate='180deg'">
+		<script>
+			var lugar;
+			var imagem;
+			lugar = document.getElementById("idlugar");
+			lugar.style.backgroundColor = "yellow";
+			document.getElementById("idPosition").src = "https://files.tecnoblog.net/wp-content/uploads/2022/09/stable-diffusion-imagem.jpg";
+		</script>
+		
+		<section onclick="this.style.backgroundColor='blue'; this.style.color='white';">teste</section>
+		
+		<section onmouseover="this.style.scale='1.5'" onmouseout="this.style.scale='1'">teste</section>
+		
+		<section style="background-color: white; height: 350px;">
+			<img  style="height: 300px;" src="apagada-removebg-preview.png" onmouseover="this.src='acesa-removebg-preview.png'" onmouseout="this.src='apagada-removebg-preview.png'">
+		</section>
+		
+		<canvas id="canvas1"></canvas>
+		
+			<script>
+				var cv = document.getElementById("canvas1");
+				var ctx = cv.getContext("2d");
+				ctx.fillRect(25,25,100,100);
+			</script>
+		
+		<canvas id="canvas2"></canvas>
+		
+			<script>
+				var cv = document.getElementById("canvas2");
+				var ctx = cv.getContext("2d");
+				ctx.clearRect(45,45,60,60);
+			</script>
+		
+		<canvas id="canvas3"></canvas>
+		
+			<script>
+				var cv = document.getElementById("canvas3");
+				var ctx = cv.getContext("2d");
+				ctx.strokeRect(50,50,50,50);
+			</script>
+		
+		<canvas id="canvas4"></canvas>
+		
+			<script>
+				var cv = document.getElementById("canvas4");
+				var ctx = cv.getContext("2d");
+				ctx.fillRect(25,25,100,100);
+				ctx.clearRect(45,45,60,60);
+				ctx.strokeRect(50,50,50,50);
+			</script>
+		
+		<canvas id="canvas5"></canvas>
+		
+			<script>
+				var cv = document.getElementById("canvas5");
+				var ctx = cv.getContext("2d");
+				ctx.fillRect(25,60,120,20);
+				ctx.fillRect(25,40,80,20);
+				ctx.fillRect(25,20,40,20);
+			</script>
+				<!--
+				var cv = document.getElementById(“meuCanvas");
+				var ctx = cv.getContext("2d"); //ctxo
+				var x = parseInt(cv.width);
+				var y = parseInt(cv.height);
+				x=(x/2)-60;
+				y=(y/2)-30;
+				ctx.fillRect(x, y, 120, 20);
+				x += 40;
+				y -= 20;
+				ctx.fillRect(x, y, 80, 20);
+				x += 40;
+				y -= 20;
+				ctx.fillRect(x, y, 40, 20);-->
+		
+		<canvas onclick="funMain();" id="canvas6"></canvas>
+		
+			<script>
+				function randomColor() 
+				{
+					var letters = '0123456789ABCDEF';
+					var color = '#';
+					for (var i = 0; i < 6; i++) {
+						color += letters[Math.floor(Math.random() * 16)]; 
+					}
+					return color;
+				}
+				
+				function funMain()
+				{	
+					var cv = document.getElementById("canvas6");
+					var ctx = cv.getContext("2d"); //ctxo
+					var color;
+					
+					for (var i=0; i<5; i++)
+					{
+						color = randomColor();
+						funQuadrado (cv,ctx,color);
+					}
+				}
+				
+				function funQuadrado (cv,ctx,cor)
+				{
+					var x = parseInt(cv.width);
+					var y = parseInt(cv.height);
+					var lado = Math.floor(Math.random()*40);
+					x-=40; y-=40;
+					x = Math.floor(Math.random()*x); 
+					y = Math.floor(Math.random()*y);
+					ctx.strokeStyle=cor;
+					ctx.strokeRect(x, y, lado, lado);
+				}
+				
+			</script>
+	</body>
+	
+</html>
+
+<!-- 
+onload="myFunc();"
+function funLista()
+-->

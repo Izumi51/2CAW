@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+	<head>	
+		<title></title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="exerGeneral.css">
+		<script type="text/javascript" src="script.js">
+		</script>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="izumi">
+	</head>
+
+	<body>
+		<section id="informacoes">
+			<h1>Informações<h1>
+		</section>
+		
+		<script>
+			var doc = document.getElementById("informacoes");
+			doc.innerHTML += "<p>Nome: " + nome + "</p>";
+			doc.innerHTML += "<p>Idade: " + idade + "</p>";
+			doc.innerHTML += "<p>Gasto com locomoção: " + gasto_diario + "</p>";
+			doc.innerHTML += "<p>Tempo livre: " + tempo_livre + "</p>";
+			doc.innerHTML += "<p>Tempo de estudo: " + tempo_estudo + "</p>";
+			doc.innerHTML += "<p>Relação entre tempo livre e tempo de estudo: " + relac + "</p>";
+		</script>
+	</body>
+</html>

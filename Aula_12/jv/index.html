@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function soma(a,b)
+        {
+            let total = parseFloat(a) + parseFloat(b);
+            return total;
+        }
+
+        function subtrai(a,b)
+        {
+            let total = parseFloat(a) - parseFloat(b);
+            return total;
+        }
+    </script>
+
+</head>
+<body>
+
+    <h1>Calculadora</h1>
+    <form>
+        <label name="valor1">1º número
+            <input type="number" id="valor1">
+        </label><br>
+        <label name="valor2">2º número
+            <input type="number" id="valor2">
+        </label><br>
+        <label name="resultado">Resultado
+            <input type="number" id="resultado">
+        </label><br>
+        <input type="button" value="Soma" onclick="this.form.resultado.value=soma(this.form.valor1.value, this.form.valor2.value)">
+        <input type="button" value="Subtração" onclick="this.form.resultado.value=subtrai(this.form.valor1.value, this.form.valor2.value)">
+    </form>
+</body>
+</html>

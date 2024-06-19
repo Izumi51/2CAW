@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(
+            function(){
+                $("button").click(function(){
+                    let total = parseFloat($("#valor1").val()) + parseFloat($("#valor2").val());
+                    
+                    $("section").append("<p>resultado: " +total+"</p>");
+                });
+            }
+        );
+    </script>
+
+</head>
+<body>
+
+    <h1>Calculadora</h1>
+
+    <p><input type="number" id="valor1"></p>
+    <p><input type="number" id="valor2"></p>
+
+    <section></section>
+
+    <button>
+        <span>=</span>
+    </button>
+    
+</body>
+</html>

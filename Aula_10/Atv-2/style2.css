@@ -1,0 +1,47 @@
+/*
+    #333C4A
+    #495664
+    #F6F7D3
+    #F8FCEB
+*/
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f6f6f6;
+}
+
+header
+{
+    background-color: #333C4A;
+    color: #ffffff;
+    padding: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+#productSection
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.productBox
+{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.product
+{
+    width: 200px;
+    height: 250px;
+    background-color: #F8FCEB;
+    border-radius: 5px;
+    box-shadow: 2px 1px 1px black;
+}

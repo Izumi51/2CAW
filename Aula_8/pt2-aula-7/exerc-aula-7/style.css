@@ -1,0 +1,30 @@
+body
+{
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: url("fundo.jpeg");
+    background-size: cover;                      
+    background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section
+{
+	background-color: black;
+	color: white;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+p
+{
+	margin: 5px;
+}
+
+h1
+{
+	text-align: center;
+	margin: 5px;
+}
+

@@ -1,0 +1,12 @@
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas
+{
+    background-color: #302e2e;
+    
+}
