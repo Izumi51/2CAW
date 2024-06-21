@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-br">
+	
+	<head>	
+		<title></title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="tempCSS.css">
+		<link rel="stylesheet" href=".css">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="izumi">
+	</head>
+
+	<body>
+		<header></header>
+		<nav></nav>
+		<main></main>
+		<footer></footer>
+	</body>
+	
+</html>
+
+CSS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100% !important;
+}
+
